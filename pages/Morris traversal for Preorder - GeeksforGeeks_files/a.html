@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" dir="ltr" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" dir="ltr" class="ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="js no-touch localstorage sessionstorage contenteditable use-opacity-transitions" dir="ltr" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Disqus Comments</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    
+    <style>
+        html {
+            overflow: hidden;
+        }
+
+        
+    </style>
+
+<link href="a_data/lounge.css" rel="stylesheet"><script src="a_data/config.js" data-requiremodule="remote/config" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="a_data/common.js" data-requiremodule="common.bundle" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="a_data/lounge.js" data-requiremodule="lounge.bundle" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="a_data/ga.js" data-requiremodule="ga" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><style id="css_1445457332700"></style><!-- base href="http://disqus.com/embed/comments/?base=default&version=fd91d13b2d924606287a773a18721766&f=geeksforgeeks&t_i=29133%20http%3A%2F%2Fwww.geeksforgeeks.org%2F%3Fp%3D29133&t_u=http%3A%2F%2Fwww.geeksforgeeks.org%2Fmorris-traversal-for-preorder%2F&t_e=Morris%20traversal%20for%20Preorder&t_d=Morris%20traversal%20for%20Preorder&t_t=Morris%20traversal%20for%20Preorder&s_o=default&l=" --><link href="http://tempest.services.disqus.com/" rel="preconnect"><link href="http://tempest.services.disqus.com/" rel="dns-prefetch"><link href="a_data/discovery.css" rel="stylesheet"><script charset="UTF-8" async="" src="a_data/event.js"></script><script src="a_data/discovery.js" data-requiremodule="discovery/main" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="a_data/highlight.js" data-requiremodule="highlight" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head>
+<body>
+    
+
+    
+    <!--[if lt IE 10]><p style="color: #fff; background-color: #f05f70; padding: 10px; margin-top: 20px;">
+        You're using a browser that Disqus plans to stop supporting soon. For more information, visit our list of 
+        <a href="https://help.disqus.com/customer/portal/articles/466228-which-browsers-does-disqus-work-with-" style="color: #fff; text-decoration: underline;">supported browsers</a>
+        and consider upgrading.
+    </p><![endif]-->
+    <div id="error" style="display:none; text-align: center">
+        <p>We were unable to load Disqus. If you are a moderator please see our <a href="https://docs.disqus.com/help/83/"> troubleshooting guide</a>. </p>
+    </div>
+
+    
+    <script type="text/json" id="disqus-forumData">{"session":{"canModerate":false,"audienceSyncVerified":false,"mustVerify":false,"canReply":true,"mustVerifyEmail":false},"features":{},"forum":{"category":null,"description":null,"founder":"65619083","settings":{"supportLevel":1,"adsDRNativeEnabled":false,"disable3rdPartyTrackers":false,"moderatorText":"","ssoRequired":false,"linkAffiliationEnabled":false,"hasCustomAvatar":false,"organicDiscoveryEnabled":false,"colorScheme":"auto","discoveryMax":false,"discoverySettingsUrl":"https://geeksforgeeks.disqus.com/admin/settings/ads/","adsVideoEnabled":false,"allowAnonPost":true,"allowMedia":false,"promotedDiscoveryEnabled":false,"allowAnonVotes":false,"mustVerify":false,"mustVerifyEmail":false,"discoveryVariant":null,"adsBannerEnabled":false,"audienceSyncEnabled":false,"typeface":"auto","discoveryLocked":false,"discoveryThumbnailsEnabled":false,"isVIP":false},"url":"http://www.geeksforgeeks.org/","guidelines":null,"favicon":{"permalink":"http://disqus.com/api/forums/favicons/geeksforgeeks.jpg","cache":"//a.disquscdn.com/uploads/forums/248/709/favicon.png"},"language":"en","avatar":{"small":{"permalink":"http://disqus.com/api/forums/avatars/geeksforgeeks.jpg?size=32","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"http://disqus.com/api/forums/avatars/geeksforgeeks.jpg?size=92","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"}},"pk":"2480709","signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.geeksforgeeks.org%2F&key=9-dhjy78r48MgbWfCCLRAA","raw_guidelines":null,"id":"geeksforgeeks","channel":null,"name":"GeeksforGeeks"}}</script>
+
+    
+    <script type="text/json" id="disqus-threadData">{"cursor":{"hasPrev":false,"prev":null,"total":23,"hasNext":false,"next":"1:0:0"},"code":0,"response":{"lastModified":1440718091,"posts":[{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"AS","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"for inorder what we did was made the left subtree's rightmost node's right child point to current node. As that's where the current should have appeared in inorder traversal. \nHere won't printing current and then making left subtree's rightmost node's right child point to right subtree be enough?","createdAt":"2015-07-30T19:16:55","id":"2165712972","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>for inorder what we did was made the left subtree's rightmost node's right child point to current node. As that's where the current should have appeared in inorder traversal. \u003cbr>Here won't printing current and then making left subtree's rightmost node's right child point to right subtree be enough?\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"username":"disqus_5DHsUAbVHd","about":"","name":"Dman","disable3rdPartyTrackers":false,"url":"","isAnonymous":false,"rep":1.270069,"profileUrl":"https://disqus.com/by/disqus_5DHsUAbVHd/","isPowerContributor":false,"reputation":1.270069,"location":"","isPrivate":false,"isPrimary":true,"joinedAt":"2015-06-29T05:09:52","id":"163449284","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_5DHsUAbVHd.jpg","cache":"//a.disquscdn.com/uploads/users/16344/9284/avatar32.jpg?1437459980"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_5DHsUAbVHd.jpg","cache":"//a.disquscdn.com/uploads/users/16344/9284/avatar92.jpg?1437459980","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_5DHsUAbVHd.jpg","cache":"//a.disquscdn.com/uploads/users/16344/9284/avatar92.jpg?1437459980"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Easily implemented with little modifications in indorder morris traversal\n\nhttps://ideone.com/Kxoqlf","createdAt":"2015-06-29T12:18:16","id":"2106345631","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":1,"isEdited":false,"message":"\u003cp>Easily implemented with little modifications in indorder morris traversal\u003c/p>\u003cp>\u003ca href=\"https://ideone.com/Kxoqlf\" rel=\"nofollow\">https://ideone.com/Kxoqlf\u003c/a>\u003c/p>","isSpam":false,"isHighlighted":false,"points":1},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"Guest","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"isn't this inorder successor actually? the code looks to be going to inorder successor. I mean its going to rightmost of left child.","createdAt":"2015-04-11T14:07:22","id":"1958955099","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>isn't this inorder successor actually? the code looks to be going to inorder successor. I mean its going to rightmost of left child.\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":1958955099,"isApproved":true,"author":{"username":"disqus_Gho2JUuHKi","about":"","name":"DS+Algo","disable3rdPartyTrackers":false,"url":"","isAnonymous":false,"rep":1.901218,"profileUrl":"https://disqus.com/by/disqus_Gho2JUuHKi/","isPowerContributor":false,"reputation":1.901218,"location":"","isPrivate":false,"isPrimary":true,"joinedAt":"2014-07-14T05:13:21","id":"114288422","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_Gho2JUuHKi.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/disqus_Gho2JUuHKi.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_Gho2JUuHKi.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"rightmost of left child of node is inorder predecessor, \ninorder traversal print kara aur check kar le","createdAt":"2015-06-11T15:33:35","id":"2073856578","thread":"1639332191","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>rightmost of left child of node is inorder predecessor, \u003cbr>inorder traversal print kara aur check kar le\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"username":"Mr_Lazy_Gaurav","about":"B.Tech (IT) - IIIT Allahabad  (Insomniac)","name":"Mr. Lazy","disable3rdPartyTrackers":false,"url":"","isAnonymous":false,"rep":1.5567849999999999,"profileUrl":"https://disqus.com/by/Mr_Lazy_Gaurav/","isPowerContributor":false,"reputation":1.5567849999999999,"location":"Allahabad","isPrivate":false,"isPrimary":true,"joinedAt":"2014-04-18T16:29:58","id":"103743931","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/Mr_Lazy_Gaurav.jpg","cache":"//a.disquscdn.com/uploads/users/10374/3931/avatar32.jpg?1436426384"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/Mr_Lazy_Gaurav.jpg","cache":"//a.disquscdn.com/uploads/users/10374/3931/avatar92.jpg?1436426384","large":{"permalink":"http://disqus.com/api/users/avatars/Mr_Lazy_Gaurav.jpg","cache":"//a.disquscdn.com/uploads/users/10374/3931/avatar92.jpg?1436426384"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Completely same as inorder, only differs in placement of print statement in else part.","createdAt":"2015-03-16T11:48:46","id":"1909641451","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":4,"isEdited":false,"message":"\u003cp>Completely same as inorder, only differs in placement of print statement in else part.\u003c/p>","isSpam":false,"isHighlighted":false,"points":4},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"username":"disqus_i21xI0Jtq1","about":"","name":"Vinod","disable3rdPartyTrackers":false,"url":"","isAnonymous":false,"rep":1.236765,"profileUrl":"https://disqus.com/by/disqus_i21xI0Jtq1/","isPowerContributor":false,"reputation":1.236765,"location":"","isPrivate":false,"isPrimary":true,"joinedAt":"2012-09-15T10:36:11","id":"32208687","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_i21xI0Jtq1.jpg","cache":"//a.disquscdn.com/uploads/users/3220/8687/avatar32.jpg?1421262416"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_i21xI0Jtq1.jpg","cache":"//a.disquscdn.com/uploads/users/3220/8687/avatar92.jpg?1421262416","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_i21xI0Jtq1.jpg","cache":"//a.disquscdn.com/uploads/users/3220/8687/avatar92.jpg?1421262416"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Time Complexity is O(n). Each edge is traversed at most 3 times and there are n-1 edges in a tree, hence the O(3(n-1)) = O(n).","createdAt":"2015-01-14T19:00:26","id":"1792594332","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Time Complexity is O(n). Each edge is traversed at most 3 times and there are n-1 edges in a tree, hence the O(3(n-1)) = O(n).\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"Vikram Ojha","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"My code is bit faster as compared to given code: this runs for 14 time for same input while the given function is 22 times for same input. so we can say its bit optimized. \n\n\nint preorderTraversalWithoutStack(struct Node *root,int &count){\n    /* Base Condition */\n    if(root==NULL)\n       return 0;\n    struct Node *current,*pre;\n    current=root;\n    while(current!=NULL)\n         cout\u003c\u003ccurrent->info\u003c\u003c\" \";\n         \n         /* if leftsubtree is NULL print current node and move right */\n         if(current->lc==NULL)\n            current=current->rc; \n            \n         else{\n           pre=current->lc;\n           while(pre->rc!=NULL)\n             pre=pre->rc;\n        \n         /* if present nodes right child is null point it to current right child */   \n           if(pre->rc==NULL){\n                 pre->rc=current->rc;\n                 current=current->lc;\n           }\n         }\n      }\n}","createdAt":"2014-12-07T15:44:57","id":"1730003032","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>My code is bit faster as compared to given code: this runs for 14 time for same input while the given function is 22 times for same input. so we can say its bit optimized.\u003c/p>\u003cp>int preorderTraversalWithoutStack(struct Node *root,int &amp;count){\u003cbr>    /* Base Condition */\u003cbr>    if(root==NULL)\u003cbr>       return 0;\u003cbr>    struct Node *current,*pre;\u003cbr>    current=root;\u003cbr>    while(current!=NULL)\u003cbr>         cout&lt;&lt;current-&gt;info&lt;&lt;\" \";\u003c/p>\u003cp>         /* if leftsubtree is NULL print current node and move right */\u003cbr>         if(current-&gt;lc==NULL)\u003cbr>            current=current-&gt;rc;\u003c/p>\u003cp>         else{\u003cbr>           pre=current-&gt;lc;\u003cbr>           while(pre-&gt;rc!=NULL)\u003cbr>             pre=pre-&gt;rc;\u003c/p>\u003cp>         /* if present nodes right child is null point it to current right child */   \u003cbr>           if(pre-&gt;rc==NULL){\u003cbr>                 pre-&gt;rc=current-&gt;rc;\u003cbr>                 current=current-&gt;lc;\u003cbr>           }\u003cbr>         }\u003cbr>      }\u003cbr>}\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"username":"green_ginger","about":"","name":"green_ginger","disable3rdPartyTrackers":false,"url":"","isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/green_ginger/","isPowerContributor":false,"reputation":1.232124,"location":"","isPrivate":false,"isPrimary":true,"joinedAt":"2014-07-18T15:04:06","id":"114890755","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/green_ginger.jpg","cache":"//a.disquscdn.com/uploads/users/11489/755/avatar32.jpg?1405696299"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/green_ginger.jpg","cache":"//a.disquscdn.com/uploads/users/11489/755/avatar92.jpg?1405696299","large":{"permalink":"http://disqus.com/api/users/avatars/green_ginger.jpg","cache":"//a.disquscdn.com/uploads/users/11489/755/avatar92.jpg?1405696299"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"hey, \n\nam new to Morris tree traversal and I tried to write pre-order in my own way..\n\nI doubt my algorithm, as it is SLIGHTLY different from the above,  whether it covered all possible cases, \n\nI will be thankful if you guys evaluate the code below..\n\nvoid morrisTraversalPreorder(struct node* root)\n{\n    struct node* current = root;\n    while (current)\n    {\n       printf( \"%d \", current->data );\n       if (current->left == NULL)\n        {\n         \n            current = current->right;\n        }\n        else if(current->right == NULL)\n        {\n        \n            current = current->left;    \n        }\n        else\n        {\n            \n            struct node* pre = current->left;\n            while (pre->right!=NULL)\n                pre = pre->right;\n                pre->right = current->right;\n                current->right = NULL;\n                current= current->left;\n        }\n    }\n}","createdAt":"2014-07-18T15:11:38","id":"1491454941","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>hey,\u003c/p>\u003cp>am new to Morris tree traversal and I tried to write pre-order in my own way..\u003c/p>\u003cp>I doubt my algorithm, as it is SLIGHTLY different from the above,  whether it covered all possible cases,\u003c/p>\u003cp>I will be thankful if you guys evaluate the code below..\u003c/p>\u003cp>void morrisTraversalPreorder(struct node* root)\u003cbr>{\u003cbr>    struct node* current = root;\u003cbr>    while (current)\u003cbr>    {\u003cbr>       printf( \"%d \", current-&gt;data );\u003cbr>       if (current-&gt;left == NULL)\u003cbr>        {\u003c/p>\u003cp>            current = current-&gt;right;\u003cbr>        }\u003cbr>        else if(current-&gt;right == NULL)\u003cbr>        {\u003c/p>\u003cp>            current = current-&gt;left;    \u003cbr>        }\u003cbr>        else\u003cbr>        {\u003c/p>\u003cp>            struct node* pre = current-&gt;left;\u003cbr>            while (pre-&gt;right!=NULL)\u003cbr>                pre = pre-&gt;right;\u003cbr>                pre-&gt;right = current-&gt;right;\u003cbr>                current-&gt;right = NULL;\u003cbr>                current= current-&gt;left;\u003cbr>        }\u003cbr>    }\u003cbr>}\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"username":"disqus_h8PC7CXyz7","about":"","name":"\u003cHoldOnLife!#>","disable3rdPartyTrackers":false,"url":"","isAnonymous":false,"rep":1.269698,"profileUrl":"https://disqus.com/by/disqus_h8PC7CXyz7/","isPowerContributor":false,"reputation":1.269698,"location":"Earth","isPrivate":true,"isPrimary":true,"joinedAt":"2014-07-07T13:50:49","id":"113442273","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_h8PC7CXyz7.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/disqus_h8PC7CXyz7.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_h8PC7CXyz7.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Is morris traversal traversal better than using stack in the previous method?","createdAt":"2014-07-10T13:49:25","id":"1478735117","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Is morris traversal traversal better than using stack in the previous method?\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":1478735117,"isApproved":true,"author":{"username":"fox_3","about":"Young, Curious and Weird.!!","name":"Kim Jong-il","disable3rdPartyTrackers":false,"url":"http://www.google.com/","isAnonymous":false,"rep":1.2898729999999998,"profileUrl":"https://disqus.com/by/fox_3/","isPowerContributor":false,"reputation":1.2898729999999998,"location":"Kanpur","isPrivate":false,"isPrimary":true,"joinedAt":"2014-04-03T06:25:28","id":"101555038","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/fox_3.jpg","cache":"//a.disquscdn.com/uploads/users/10155/5038/avatar32.jpg?1422625660"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/fox_3.jpg","cache":"//a.disquscdn.com/uploads/users/10155/5038/avatar92.jpg?1422625660","large":{"permalink":"http://disqus.com/api/users/avatars/fox_3.jpg","cache":"//a.disquscdn.com/uploads/users/10155/5038/avatar92.jpg?1422625660"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"No, It takes more time than that.","createdAt":"2014-08-26T17:32:00","id":"1560271774","thread":"1639332191","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":1,"isEdited":false,"message":"\u003cp>No, It takes more time than that.\u003c/p>","isSpam":false,"isHighlighted":false,"points":1},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"np","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"By changing just one printf statement from preorder we can convert it to inorder\n\nfollowing is te link for inorder\n\nhttp://ideone.com/G5Ar4J\n\n\n\nhappy coding","createdAt":"2014-07-01T14:24:24","id":"1463393440","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":1,"isEdited":false,"message":"\u003cp>By changing just one printf statement from preorder we can convert it to inorder\u003c/p>\u003cp>following is te link for inorder\u003c/p>\u003cp>\u003ca href=\"http://ideone.com/G5Ar4J\" rel=\"nofollow\">http://ideone.com/G5Ar4J\u003c/a>\u003c/p>\u003cp>happy coding\u003c/p>","isSpam":false,"isHighlighted":false,"points":1},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"username":"gastonbm","about":"student","name":"gastonbm","disable3rdPartyTrackers":false,"url":"http://zahlenteufel.github.io","isAnonymous":false,"rep":1.235468,"profileUrl":"https://disqus.com/by/gastonbm/","isPowerContributor":false,"reputation":1.235468,"location":"buenos aires","isPrivate":false,"isPrimary":true,"joinedAt":"2014-05-29T14:15:40","id":"108740966","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/gastonbm.jpg","cache":"//a.disquscdn.com/uploads/users/10874/966/avatar32.jpg?1402928727"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/gastonbm.jpg","cache":"//a.disquscdn.com/uploads/users/10874/966/avatar92.jpg?1402928727","large":{"permalink":"http://disqus.com/api/users/avatars/gastonbm.jpg","cache":"//a.disquscdn.com/uploads/users/10874/966/avatar92.jpg?1402928727"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Great! It's almost the same, it was hard to notice the difference :P","createdAt":"2014-06-03T22:15:29","id":"1418333601","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":2,"isEdited":false,"message":"\u003cp>Great! It's almost the same, it was hard to notice the difference :P\u003c/p>","isSpam":false,"isHighlighted":false,"points":2},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"username":"alienonearth","about":"Programmer, Yet Another Girl Geek","name":"AlienOnEarth","disable3rdPartyTrackers":false,"url":"","isAnonymous":false,"rep":1.621734,"profileUrl":"https://disqus.com/by/alienonearth/","isPowerContributor":false,"reputation":1.621734,"location":"","isPrivate":false,"isPrimary":true,"joinedAt":"2014-04-13T00:42:47","id":"103005112","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/alienonearth.jpg","cache":"//a.disquscdn.com/uploads/users/10300/5112/avatar32.jpg?1397349967"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/alienonearth.jpg","cache":"//a.disquscdn.com/uploads/users/10300/5112/avatar92.jpg?1397349967","large":{"permalink":"http://disqus.com/api/users/avatars/alienonearth.jpg","cache":"//a.disquscdn.com/uploads/users/10300/5112/avatar92.jpg?1397349967"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Excellent","createdAt":"2014-04-28T23:52:56","id":"1359880372","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Excellent\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"X","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"A correction in the if conditions for current.right != null:\n\n\nIn the traversal, if current.right == root, it means we have reached a node that's already processed(threaded) and this can be printed and the link reverted back to null. If current.right == null, it means we are reaching this node for this first time and this needs to linked to the inorder successor. So, I think the conditions should be swapped to the following. Please correct me if I 'am wrong:\n\n\nif(current.right == null)\n{\n  current.right = root;\n  root = root.left;\n}\nelse\n{\n print(current.data);\n current.right = null;\n root = root.right;\n}","createdAt":"2014-03-15T08:49:42","id":"1285565770","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>A correction in the if conditions for current.right != null:\u003c/p>\u003cp>In the traversal, if current.right == root, it means we have reached a node that's already processed(threaded) and this can be printed and the link reverted back to null. If current.right == null, it means we are reaching this node for this first time and this needs to linked to the inorder successor. So, I think the conditions should be swapped to the following. Please correct me if I 'am wrong:\u003c/p>\u003cp>if(current.right == null)\u003cbr>{\u003cbr>  current.right = root;\u003cbr>  root = root.left;\u003cbr>}\u003cbr>else\u003cbr>{\u003cbr> print(current.data);\u003cbr> current.right = null;\u003cbr> root = root.right;\u003cbr>}\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"sap","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"what about morris traversal for postorder?","createdAt":"2013-06-19T23:46:06","id":"1016419153","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>what about morris traversal for postorder?\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"abhishek08aug","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Intelligent :D","createdAt":"2013-05-22T23:06:51","id":"1016419152","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Intelligent :D\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"Soumya Sengupta","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"why is it printing the tree twice??\n\n\u003cpre> \u003ccode language=\"C\">\n/* Paste your code here (You may delete these lines if not writing code) */\n\u003c/code> \u003c/pre>","createdAt":"2013-04-09T12:19:08","id":"1016419151","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":1,"isEdited":false,"message":"\u003cp>why is it printing the tree twice??\u003c/p>\u003cp>\u003c/p>\u003cpre> \u003ccode>\u003cbr>/* Paste your code here (You may delete these lines if not writing code) */\u003cbr>\u003c/code> \u003c/pre>","isSpam":false,"isHighlighted":false,"points":1},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"Debjit","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Viky,\n\nLinear time complexity and constant space complexity\n\n\n\u003cpre> \u003ccode language=\"C\">\n/* Paste your code here (You may delete these lines if not writing code) */\n\u003c/code> \u003c/pre>","createdAt":"2013-02-28T05:13:45","id":"1016419150","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Viky,\u003c/p>\u003cp>Linear time complexity and constant space complexity\u003c/p>\u003cp>\u003c/p>\u003cpre> \u003ccode>\u003cbr>/* Paste your code here (You may delete these lines if not writing code) */\u003cbr>\u003c/code> \u003c/pre>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":1016419150,"isApproved":true,"author":{"name":"ubiquitous","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"this is not linear time complexity. it's O(NLogN)  and constant space. So sometimes the memory restriction is so much that this traversal helps in great time rathe then O(N) recursive preorder traversal. Hope it helps.","createdAt":"2013-08-07T17:08:13","id":"1016427493","thread":"1639332191","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":2,"isEdited":false,"message":"\u003cp>this is not linear time complexity. it's O(NLogN)  and constant space. So sometimes the memory restriction is so much that this traversal helps in great time rathe then O(N) recursive preorder traversal. Hope it helps.\u003c/p>","isSpam":false,"isHighlighted":false,"points":2},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"Madhav","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Great Solution.\nThanks.","createdAt":"2013-02-10T17:35:09","id":"1016419148","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":1,"isEdited":false,"message":"\u003cp>Great Solution.\u003cbr>Thanks.\u003c/p>","isSpam":false,"isHighlighted":false,"points":1},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"Viky","url":"http://www.geeksforgeeks.org/morris-traversal-for-preorder/","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"What is the complexity of this algorithm?","createdAt":"2013-01-22T06:33:45","id":"1016419147","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>What is the complexity of this algorithm?\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"geeksforgeeks","parent":1016419147,"isApproved":true,"author":{"username":"jainsaurabh","about":"","name":"Nitin Sharma","disable3rdPartyTrackers":false,"url":"","isAnonymous":false,"rep":1.239037,"profileUrl":"https://disqus.com/by/jainsaurabh/","isPowerContributor":false,"reputation":1.239037,"location":"","isPrivate":false,"isPrimary":true,"joinedAt":"2013-09-29T02:37:25","id":"75247996","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/jainsaurabh.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/jainsaurabh.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/jainsaurabh.jpg","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":1,"raw_message":"Time Complexity -> n Log(n)\n\nwhere n -> number of nodes.\n\nAs\n you can see there are two while loops.First while loop is iterating \nthrough each and every node and second while loop is helping to find the\n inorder predecessor .\n\n1. Due to outer loop -> O(n)\n\n2. Due to inner loop  -> O(Log(n))","createdAt":"2013-12-31T00:38:57","id":"1181824292","thread":"1639332191","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Time Complexity -&gt; n Log(n)\u003c/p>\u003cp>where n -&gt; number of nodes.\u003c/p>\u003cp>As\u003cbr> you can see there are two while loops.First while loop is iterating \u003cbr>through each and every node and second while loop is helping to find the\u003cbr> inorder predecessor .\u003c/p>\u003cp>1. Due to outer loop -&gt; O(n)\u003c/p>\u003cp>2. Due to inner loop  -&gt; O(Log(n))\u003c/p>","isSpam":false,"isHighlighted":false,"points":-1},{"forum":"geeksforgeeks","parent":null,"isApproved":true,"author":{"name":"Shyam Raj","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar32.png","cache":"//a.disquscdn.com/1445299659/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1445299659/images/noavatar92.png","cache":"//a.disquscdn.com/1445299659/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"This is really an interesting algorithm :).\n\nHad to debug a lot to figure out what&amp;#039s really happening.\n\nBut loved it indeed :).","createdAt":"2013-01-16T23:06:31","id":"1016419155","thread":"1639332191","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>This is really an interesting algorithm :).\u003c/p>\u003cp>Had to debug a lot to figure out what&amp;#039s really happening.\u003c/p>\u003cp>But loved it indeed :).\u003c/p>","isSpam":false,"isHighlighted":false,"points":0}],"thread":{"feed":"https://geeksforgeeks.disqus.com/morris_traversal_for_preorder/latest.rss","uploadAdd":"//geeksforgeeks.disqus.com/thread/morris_traversal_for_preorder/async_media_upload/","identifiers":["29133 http://www.geeksforgeeks.org/?p=29133"],"dislikes":0,"likes":3,"message":"","id":"1639332191","createdAt":"2013-08-24T18:48:52","category":"2517633","clean_title":"Morris traversal for Preorder","userScore":0,"userSubscription":false,"isSpam":false,"signedLink":"http://disq.us/?url=http%3A%2F%2Fwww.geeksforgeeks.org%2Fmorris-traversal-for-preorder%2F&key=xOZ8brBsWUFrjf7pOQElkw","isDeleted":false,"hasStreaming":false,"uploadRemove":"//geeksforgeeks.disqus.com/thread/morris_traversal_for_preorder/async_media_remove/","raw_message":"","isClosed":false,"link":"http://www.geeksforgeeks.org/morris-traversal-for-preorder/","slug":"morris_traversal_for_preorder","forum":"geeksforgeeks","author":"65619083","posts":23,"moderators":[65619083,82955661],"title":"Morris traversal for Preorder","highlightedPost":null}},"order":"desc"}</script>
+
+    
+
+    <div id="fixed-content"></div>
+
+
+    
+        
+        <!--[if lte IE 8]>
+<script src="//a.disquscdn.com/1445299659/build/vendor/ie8.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<script src="//a.disquscdn.com/1445299659/build/vendor/ie9.js"></script>
+<![endif]-->
+
+        
+<script type="text/json" id="disqus-urls">{
+    "root":"//disqus.com",
+    "next":"//a.disquscdn.com/next/current/embed"
+}</script>
+
+        <script src="a_data/lounge_002.js" id="bootstrap-script" data-app="lounge" async=""></script>
+    
+
+
+<div id="layout" data-tracking-area="layout">
+
+<div id="placement-top" data-tracking-area="discovery-north"></div>
+
+<div id="onboard" data-tracking-area="onboard"></div>
+
+<div style="display: none;" id="highlighted-post" data-tracking-area="highlighted" class="highlighted-post"></div>
+
+<div id="global-alert"></div>
+
+<header id="main-nav" data-tracking-area="main-nav">
+<nav class="nav nav-primary">
+<ul>
+<li class="tab-conversation active" data-role="post-count"><a class="publisher-nav-color">
+<span class="comment-count">
+23 comments
+</span>
+
+<span class="comment-count-placeholder">
+Comments
+</span>
+</a>
+</li>
+<li class="tab-community">
+<a href="https://disqus.com/home/forums/geeksforgeeks/" class="publisher-nav-color" data-action="community-sidebar" data-forum="geeksforgeeks" id="community-tab">
+<span class="community-name">
+<strong>GeeksforGeeks</strong>
+
+</span>
+
+<strong class="community-name-placeholder">Community</strong>
+</a>
+</li>
+<li class="dropdown user-menu" data-role="logout"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<span class="dropdown-toggle-wrapper">
+
+<span>
+Login
+</span>
+
+</span> <span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+
+
+<li>
+<a href="#" data-action="auth:disqus">Disqus</a>
+</li>
+<li>
+<a href="#" data-action="auth:facebook">Facebook</a>
+</li>
+<li>
+<a href="#" data-action="auth:twitter">Twitter</a>
+</li>
+<li>
+<a href="#" data-action="auth:google">Google</a>
+</li>
+
+
+
+</ul>
+</li>
+<li class="notification-menu unread" data-role="notification-menu"><a href="https://disqus.com/home/inbox/" class="notification-container" data-action="home" data-home-path="home/inbox/">
+<span class="notification-icon icon-comment" aria-hidden=""></span>
+<span class="notification-count" data-role="notification-count">1</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+
+<section id="conversation" data-role="main" data-tracking-area="main">
+<div class="nav nav-secondary" data-tracking-area="secondary-nav">
+<ul>
+<li id="recommend-button" class="recommend dropdown">
+<div class="thread-likes"><a href="#" data-action="recommend" title="Recommend this discussion" class="dropdown-toggle ">
+<span class="icon-heart"></span>
+<span class="label label-default">Recommend</span>
+<span class="label label-recommended">Recommended</span>
+<span class="label label-count">3</span>
+</a>
+<ul class="dropdown-menu coachmark">
+<li>
+<h2>Discussion Recommended!</h2>
+<p>Recommending means this is a discussion worth sharing. It gets shared
+ to your followers' Disqus feeds, and gives the creator kudos!</p>
+<a href="http://disqus.com/home/?utm_source=disqus_embed&amp;utm_content=recommend_btn" class="btn btn-primary" target="_blank">
+ Find More Discussions 
+</a>
+</li>
+</ul>
+</div></li>
+<li id="thread-share-menu" class="dropdown share-menu hidden-sm"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Share">
+<span class="icon-export"></span>
+<span class="label">Share</span>
+</a>
+<ul class="share-menu dropdown-menu">
+<li class="share">Share this discussion on
+<ul>
+<li class="twitter">
+<a data-action="share:twitter" href="#">Twitter</a>
+</li>
+<li class="facebook">
+<a data-action="share:facebook" href="#">Facebook</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-role="post-sort" class="dropdown sorting pull-right">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+Sort by Newest
+
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu pull-right">
+<li>
+<a href="#" data-action="sort" data-sort="popular">Best<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+
+<li class="selected">
+<a href="#" data-action="sort" data-sort="desc">Newest<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+
+<li>
+<a href="#" data-action="sort" data-sort="asc">Oldest<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div id="posts">
+<div id="form"><form class="reply">
+<div class="postbox">
+<div role="alert"></div>
+<div class="avatar">
+<span class="user">
+<img data-role="user-avatar" src="a_data/noavatar92_002.png" alt="Avatar">
+</span>
+</div>
+
+<div class="textarea-wrapper" data-role="textarea" dir="auto"><div><span class="placeholder">Join the discussion…</span><div aria-label="Join the discussion…" style="overflow: auto; max-height: 350px;" data-role="editable" aria-multiline="true" role="textbox" tabindex="0" class="textarea" contenteditable="true"><p><br></p></div><div style="display: none;"><ul class="suggestions">
+<li class="header">
+<h5>in this conversation</h5>
+</li>
+</ul>
+</div></div>
+<div data-role="drag-drop-placeholder" class="media-drag-hover" style="display: none">
+<div class="drag-text">
+⬇ Drag and drop your images here to upload them.
+</div>
+</div>
+<div class="edit-alert" role="postbox-alert"></div>
+<div class="post-actions">
+<ul class="wysiwyg">
+</ul>
+</div>
+</div>
+
+<div data-role="login-form"><div><section class="auth-section logged-out">
+<div class="connect">
+<h6>Log in with</h6>
+<ul data-role="login-menu" class="services login-buttons">
+
+
+<li class="auth-disqus">
+<button type="button" data-action="auth:disqus" title="Disqus"><i class="icon-disqus"></i></button>
+</li>
+<li class="auth-facebook">
+<button type="button" data-action="auth:facebook" title="Facebook"><i class="icon-facebook-circle"></i></button>
+</li>
+<li class="auth-twitter">
+<button type="button" data-action="auth:twitter" title="Twitter"><i class="icon-twitter-circle"></i></button>
+</li>
+<li class="auth-google">
+<button type="button" data-action="auth:google" title="Google"><i class="icon-google-plus-circle"></i></button>
+</li>
+</ul>
+</div>
+<div class="guest">
+<h6 class="guest-form-title">
+<span class="register-text"> or sign up with Disqus </span>
+<span class="guest-text"> or pick a name </span>
+</h6>
+
+<div class="what-is-disqus help-icon">
+<div id="rules" class="tooltip show">
+<h3>Disqus is a discussion network</h3>
+<ul>
+<li><span>Disqus never moderates or censors. The rules on this community are its own.</span></li>
+<li><span>Your email is safe with us. It's only used for moderation and optional notifications.</span></li>
+<li><span>Don't be a jerk or do anything illegal. Everything is easier that way.</span></li>
+</ul>
+<p class="clearfix"><a href="https://docs.disqus.com/kb/terms-and-policies/" class="btn btn-small" target="_blank">Read full terms and conditions</a></p>
+</div>
+</div>
+
+<p class="input-wrapper">
+<input dir="auto" placeholder="Name" name="display_name" id="view80_display_name" maxlength="30" type="text">
+</p>
+
+<div class="guest-details " data-role="guest-details">
+<p class="input-wrapper">
+<input dir="auto" placeholder="Email" name="email" id="view80_email" type="email">
+</p>
+
+<p class="input-wrapper">
+<input dir="auto" class="register-text" placeholder="Password" name="password" id="view80_password" type="password">
+</p>
+
+<div class="acceptance-wrapper register-text">
+By signing up, you agree to the Disqus <a target="_blank" href="https://help.disqus.com/customer/portal/articles/1753105-basic-rules-for-disqus-powered-profiles-and-discussions">Basic Rules</a>, <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466260-terms-of-service">Terms of Service</a>, and <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466259-privacy-policy">Privacy Policy</a>.
+</div>
+<div class="acceptance-wrapper guest-text">
+By posting, you agree to the Disqus <a target="_blank" href="https://help.disqus.com/customer/portal/articles/1753105-basic-rules-for-disqus-powered-profiles-and-discussions">Basic Rules</a>, <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466260-terms-of-service">Terms of Service</a>, and <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466259-privacy-policy">Privacy Policy</a>.
+</div>
+
+<div class="guest-checkbox">
+<label>
+<input name="author-guest" type="checkbox">
+I'd rather post as a guest
+</label>
+</div>
+
+<div class="proceed" data-role="submit-btn-container">
+<button type="submit" class="btn submit" aria-label="Post"><span class="icon-proceed"></span><div class="spinner"></div></button>
+<button type="submit" class="btn next" aria-label="Next"><span class="icon-proceed"></span><div class="spinner"></div></button>
+</div>
+</div>
+</div>
+</section>
+
+</div></div>
+</div>
+</form></div>
+
+<button class="alert realtime" style="display: none" data-role="realtime-notification">
+</button>
+
+<div id="no-posts" style="display:none"></div>
+
+<ul id="post-list" class="post-list"><li id="post-2165712972" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">AS</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-2165712972" data-role="relative-time" class="time-ago" title="Friday, July 31, 2015 12:46 AM">
+3 months ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>for inorder what we did was made the left subtree's rightmost node's 
+right child point to current node. As that's where the current should 
+have appeared in inorder traversal. <br>Here won't printing current and then making left subtree's rightmost node's right child point to right subtree be enough?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-2165712972">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2165712972">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-2106345631" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_5DHsUAbVHd/" class="user" data-action="profile" data-username="disqus_5DHsUAbVHd">
+<img data-role="user-avatar" data-user="163449284" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_5DHsUAbVHd/" data-action="profile" data-username="disqus_5DHsUAbVHd" data-role="username">Dman</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-2106345631" data-role="relative-time" class="time-ago" title="Monday, June 29, 2015 5:48 PM">
+4 months ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Easily implemented with little modifications in indorder morris traversal</p><p><a href="https://ideone.com/Kxoqlf" rel="nofollow">https://ideone.com/Kxoqlf</a></p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-1" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">1</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-2106345631">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2106345631">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1958955099" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Guest</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1958955099" data-role="relative-time" class="time-ago" title="Saturday, April 11, 2015 7:37 PM">
+6 months ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>isn't this inorder successor actually? the code looks to be going to 
+inorder successor. I mean its going to rightmost of left child.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1958955099">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1958955099">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-2073856578" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_Gho2JUuHKi/" class="user" data-action="profile" data-username="disqus_Gho2JUuHKi">
+<img data-role="user-avatar" data-user="114288422" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_Gho2JUuHKi/" data-action="profile" data-username="disqus_Gho2JUuHKi" data-role="username">DS+Algo</a></span>
+
+<span><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1958955099" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Guest</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-2073856578" data-role="relative-time" class="time-ago" title="Thursday, June 11, 2015 9:03 PM">
+4 months ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>rightmost of left child of node is inorder predecessor, <br>inorder traversal print kara aur check kar le</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-2073856578">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2073856578">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li><li id="post-1909641451" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/Mr_Lazy_Gaurav/" class="user" data-action="profile" data-username="Mr_Lazy_Gaurav">
+<img data-role="user-avatar" data-user="103743931" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/Mr_Lazy_Gaurav/" data-action="profile" data-username="Mr_Lazy_Gaurav" data-role="username">Mr. Lazy</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1909641451" data-role="relative-time" class="time-ago" title="Monday, March 16, 2015 5:18 PM">
+7 months ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Completely same as inorder, only differs in placement of print statement in else part.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-4" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">4</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1909641451">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1909641451">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1792594332" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_i21xI0Jtq1/" class="user" data-action="profile" data-username="disqus_i21xI0Jtq1">
+<img data-role="user-avatar" data-user="32208687" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_i21xI0Jtq1/" data-action="profile" data-username="disqus_i21xI0Jtq1" data-role="username">Vinod</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1792594332" data-role="relative-time" class="time-ago" title="Thursday, January 15, 2015 12:30 AM">
+9 months ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Time Complexity is O(n). Each edge is traversed at most 3 times and there are n-1 edges in a tree, hence the O(3(n-1)) = O(n).</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1792594332">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1792594332">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1730003032" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Vikram Ojha</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1730003032" data-role="relative-time" class="time-ago" title="Sunday, December 7, 2014 9:14 PM">
+10 months ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div style="height: 374px;" class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>My code is bit faster as compared to given code: this runs for 14 
+time for same input while the given function is 22 times for same input.
+ so we can say its bit optimized.</p><p>int preorderTraversalWithoutStack(struct Node *root,int &amp;count){<br>    /* Base Condition */<br>    if(root==NULL)<br>       return 0;<br>    struct Node *current,*pre;<br>    current=root;<br>    while(current!=NULL)<br>         cout&lt;&lt;current-&gt;info&lt;&lt;" ";</p><p>         /* if leftsubtree is NULL print current node and move right */<br>         if(current-&gt;lc==NULL)<br>            current=current-&gt;rc;</p><p>         else{<br>           pre=current-&gt;lc;<br>           while(pre-&gt;rc!=NULL)<br>             pre=pre-&gt;rc;</p><p>         /* if present nodes right child is null point it to current right child */   <br>           if(pre-&gt;rc==NULL){<br>                 pre-&gt;rc=current-&gt;rc;<br>                 current=current-&gt;lc;<br>           }<br>         }<br>      }<br>}</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1730003032">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1730003032">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1491454941" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/green_ginger/" class="user" data-action="profile" data-username="green_ginger">
+<img data-role="user-avatar" data-user="114890755" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/green_ginger/" data-action="profile" data-username="green_ginger" data-role="username">green_ginger</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1491454941" data-role="relative-time" class="time-ago" title="Friday, July 18, 2014 8:41 PM">
+a year ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div style="height: 374px;" class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>hey,</p><p>am new to Morris tree traversal and I tried to write pre-order in my own way..</p><p>I doubt my algorithm, as it is SLIGHTLY different from the above,  whether it covered all possible cases,</p><p>I will be thankful if you guys evaluate the code below..</p><p>void morrisTraversalPreorder(struct node* root)<br>{<br>    struct node* current = root;<br>    while (current)<br>    {<br>       printf( "%d ", current-&gt;data );<br>       if (current-&gt;left == NULL)<br>        {</p><p>            current = current-&gt;right;<br>        }<br>        else if(current-&gt;right == NULL)<br>        {</p><p>            current = current-&gt;left;    <br>        }<br>        else<br>        {</p><p>            struct node* pre = current-&gt;left;<br>            while (pre-&gt;right!=NULL)<br>                pre = pre-&gt;right;<br>                pre-&gt;right = current-&gt;right;<br>                current-&gt;right = NULL;<br>                current= current-&gt;left;<br>        }<br>    }<br>}</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1491454941">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1491454941">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1478735117" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_h8PC7CXyz7/" class="user" data-action="profile" data-username="disqus_h8PC7CXyz7">
+<img data-role="user-avatar" data-user="113442273" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_h8PC7CXyz7/" data-action="profile" data-username="disqus_h8PC7CXyz7" data-role="username">&lt;HoldOnLife!#&gt;</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1478735117" data-role="relative-time" class="time-ago" title="Thursday, July 10, 2014 7:19 PM">
+a year ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Is morris traversal traversal better than using stack in the previous method?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1478735117">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1478735117">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-1560271774" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/fox_3/" class="user" data-action="profile" data-username="fox_3">
+<img data-role="user-avatar" data-user="101555038" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/fox_3/" data-action="profile" data-username="fox_3" data-role="username">Kim Jong-il</a></span>
+
+<span><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1478735117" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> &lt;HoldOnLife!#&gt;</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1560271774" data-role="relative-time" class="time-ago" title="Tuesday, August 26, 2014 11:02 PM">
+a year ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>No, It takes more time than that.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-1" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">1</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1560271774">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1560271774">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li><li id="post-1463393440" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">np</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1463393440" data-role="relative-time" class="time-ago" title="Tuesday, July 1, 2014 7:54 PM">
+a year ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>By changing just one printf statement from preorder we can convert it to inorder</p><p>following is te link for inorder</p><p><a href="http://ideone.com/G5Ar4J" rel="nofollow">http://ideone.com/G5Ar4J</a></p><p>happy coding</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-1" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">1</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1463393440">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1463393440">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1418333601" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/gastonbm/" class="user" data-action="profile" data-username="gastonbm">
+<img data-role="user-avatar" data-user="108740966" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/gastonbm/" data-action="profile" data-username="gastonbm" data-role="username">gastonbm</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1418333601" data-role="relative-time" class="time-ago" title="Wednesday, June 4, 2014 3:45 AM">
+a year ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Great! It's almost the same, it was hard to notice the difference :P</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-2" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">2</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1418333601">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1418333601">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1359880372" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/alienonearth/" class="user" data-action="profile" data-username="alienonearth">
+<img data-role="user-avatar" data-user="103005112" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/alienonearth/" data-action="profile" data-username="alienonearth" data-role="username">AlienOnEarth</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1359880372" data-role="relative-time" class="time-ago" title="Tuesday, April 29, 2014 5:22 AM">
+a year ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Excellent</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1359880372">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1359880372">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1285565770" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">X</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1285565770" data-role="relative-time" class="time-ago" title="Saturday, March 15, 2014 2:19 PM">
+2 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>A correction in the if conditions for current.right != null:</p><p>In
+ the traversal, if current.right == root, it means we have reached a 
+node that's already processed(threaded) and this can be printed and the 
+link reverted back to null. If current.right == null, it means we are 
+reaching this node for this first time and this needs to linked to the 
+inorder successor. So, I think the conditions should be swapped to the 
+following. Please correct me if I 'am wrong:</p><p>if(current.right == null)<br>{<br>  current.right = root;<br>  root = root.left;<br>}<br>else<br>{<br> print(current.data);<br> current.right = null;<br> root = root.right;<br>}</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1285565770">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1285565770">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1016419153" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">sap</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419153" data-role="relative-time" class="time-ago" title="Thursday, June 20, 2013 5:16 AM">
+2 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>what about morris traversal for postorder?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419153">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1016419153">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1016419152" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">abhishek08aug</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419152" data-role="relative-time" class="time-ago" title="Thursday, May 23, 2013 4:36 AM">
+2 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Intelligent :D</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419152">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1016419152">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1016419151" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Soumya Sengupta</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419151" data-role="relative-time" class="time-ago" title="Tuesday, April 9, 2013 5:49 PM">
+3 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>why is it printing the tree twice??</p><p></p><pre> <code class="perl">/* Paste your code here (You may <span class="keyword">delete</span> these lines <span class="keyword">if</span> <span class="keyword">not</span> writing code) <span class="variable">*/</span>
+</code> </pre>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-1" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">1</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419151">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1016419151">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1016419150" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Debjit</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419150" data-role="relative-time" class="time-ago" title="Thursday, February 28, 2013 10:43 AM">
+3 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Viky,</p><p>Linear time complexity and constant space complexity</p><p></p><pre> <code class="perl">/* Paste your code here (You may <span class="keyword">delete</span> these lines <span class="keyword">if</span> <span class="keyword">not</span> writing code) <span class="variable">*/</span>
+</code> </pre>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419150">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1016419150">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-1016427493" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">ubiquitous</span>
+
+<span><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419150" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Debjit</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016427493" data-role="relative-time" class="time-ago" title="Wednesday, August 7, 2013 10:38 PM">
+2 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>this is not linear time complexity. it's O(NLogN)  and constant 
+space. So sometimes the memory restriction is so much that this 
+traversal helps in great time rathe then O(N) recursive preorder 
+traversal. Hope it helps.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-2" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">2</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016427493">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1016427493">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li><li id="post-1016419148" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Madhav</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419148" data-role="relative-time" class="time-ago" title="Sunday, February 10, 2013 11:05 PM">
+3 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Great Solution.<br>Thanks.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-1" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">1</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419148">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1016419148">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1016419147" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Viky</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419147" data-role="relative-time" class="time-ago" title="Tuesday, January 22, 2013 12:03 PM">
+3 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>What is the complexity of this algorithm?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419147">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1016419147">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-1181824292" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/jainsaurabh/" class="user" data-action="profile" data-username="jainsaurabh">
+<img data-role="user-avatar" data-user="75247996" src="a_data/noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/jainsaurabh/" data-action="profile" data-username="jainsaurabh" data-role="username">Nitin Sharma</a></span>
+
+<span><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419147" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Viky</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1181824292" data-role="relative-time" class="time-ago" title="Tuesday, December 31, 2013 6:08 AM">
+2 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Time Complexity -&gt; n Log(n)</p><p>where n -&gt; number of nodes.</p><p>As<br> you can see there are two while loops.First while loop is iterating <br>through each and every node and second while loop is helping to find the<br> inorder predecessor .</p><p>1. Due to outer loop -&gt; O(n)</p><p>2. Due to inner loop  -&gt; O(Log(n))</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-1" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1181824292">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1181824292">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li><li id="post-1016419155" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="a_data/noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Shyam Raj</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419155" data-role="relative-time" class="time-ago" title="Thursday, January 17, 2013 4:36 AM">
+3 years ago
+</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>This is really an interesting algorithm :).</p><p>Had to debug a lot to figure out what&amp;#039s really happening.</p><p>But loved it indeed :).</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://www.geeksforgeeks.org/morris-traversal-for-preorder/#comment-1016419155">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1016419155">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+<div class="load-more" data-role="more" style="display:none">
+<a href="#" data-action="more-posts" class="btn">Load more comments</a>
+</div>
+</div>
+
+</section>
+
+<div id="placement-bottom" data-tracking-area="discovery-south"></div>
+
+<div id="footer" data-tracking-area="footer">
+<ul>
+<li class="logo"><a href="https://disqus.com/" rel="nofollow" title="Powered by Disqus">Powered by Disqus</a></li>
+<li id="thread-subscribe-button" class="email"> 
+<div class="default">
+<a href="#" rel="nofollow" data-action="subscribe" title="Subscribe and get email updates from this discussion"><i aria-hidden="true" class="icon-mail"></i><span class="clip">Subscribe</span> <i aria-hidden="true" class="icon-checkmark"></i></a>
+</div>
+<div class="form">
+<div class="input-wrapper"><input id="thread-subscribe-email" placeholder="yourname@email.com" type="email"></div>
+</div>
+</li>
+<li class="install">
+<a href="https://publishers.disqus.com/engage?utm_source=geeksforgeeks&amp;utm_medium=Disqus-Footer" rel="nofollow" target="_blank">
+<i aria-hidden="true" class="icon-disqus"></i>
+<span class="clip">Add Disqus to your site</span>
+</a>
+</li>
+<li class="privacy">
+<a href="https://help.disqus.com/customer/portal/articles/1657951?utm_source=disqus&amp;utm_medium=embed-footer&amp;utm_content=privacy-btn" rel="nofollow" target="_blank">
+<i aria-hidden="true" class="icon-lock"></i>
+<span class="clip">Privacy</span>
+</a>
+</li>
+</ul>
+</div>
+</div><img src="a_data/a.html" style="display: none;"><img src="a_data/p-94WKwgUwZHlfo.gif" style="display: none;"><img class="mfoqyaplkafqprjvbbay" src="a_data/learn.gif" style="display: none;"></body></html>

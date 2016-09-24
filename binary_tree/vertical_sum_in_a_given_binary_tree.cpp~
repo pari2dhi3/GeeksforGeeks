@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef struct tree
+{
+	tree *left;
+	tree *right;
+	int val;
+}tree;
+tree * newnode(int data)
+{
+	tree *node;
+	node=(tree *)malloc(sizeof(tree));
+	node->left=NULL;
+	node->right=NULL;
+	node->val=data;
+}
+void vertical_sum2(tree *node, map<int,int> &m, int level)
+{
+	if(node)
+	{
+		m[level]+=m[level]+node->val;
+		vertical_sum2(node->left,m,level-1);
+		vertical_sum2(node->right,m,level+1);
+	}
+}
+void vertical_sum1(tree *node)
+{
+	map<int,int>m;
+	vertical_sum2(node,m,0);
+	for (map<int,int>::iterator it=m.begin(); it!=m.end(); ++it)	
+		cout << it->first << " => " << it->second << endl;
+	return;
+}
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	tree *root;
+	root=newnode(1);
+	root->left=newnode(2);
+	root->left->left=newnode(4);
+	root->left->right=newnode(5);
+	root->right=newnode(3);
+	root->right->left=newnode(6);
+	root->right->right=newnode(7);
+	vertical_sum1(root);
+	return 0;
+}

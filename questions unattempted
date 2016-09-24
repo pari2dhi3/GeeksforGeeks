@@ -1,0 +1,32 @@
+morris-traversal-for-preorder
+linked-complete-binary-tree-its-creation
+segment-tree-set-1-sum-of-given-range
+Construct Complete Binary Tree from its Linked List Representation
+Ternary Search Tree
+Find all possible interpretations of an array of digits 
+Custom Tree Problem
+Print ancestors of a given binary tree node without recursion
+Print Postorder traversal from given Inorder and Preorder traversals
+Remove all nodes which don’t lie in any path with sum>= k
+Extract Leaves of a Binary Tree in a Doubly Linked List
+Lowest Common Ancestor in a Binary Tree
+80. Print all nodes at distance k from a given node
+82. Construct a tree from Inorder and Level order traversals
+87. Serialize and Deserialize a Binary Tree
+89. Find the closest leaf in a Binary Tree
+95. Minimum no. of iterations to pass information to all nodes in the tree 
+96. Clone a Binary Tree with Random Pointers
+98. Vertex Cover Problem | Set 2 (Dynamic Programming Solution for Tree)
+109. Succinct Encoding of Binary Tree
+110. Construct Binary Tree from given Parent Array representation
+BST : 
+11. Find k-th smallest element in BST (Order Statistics in BST).
+12. K’th smallest element in BST using O(1) Extra Space
+15. Find the largest BST subtree in a given Binary Tree
+20. Find if there is a triplet in a Balanced BST that adds to zero
+21. 	Merge two BSTs with limited extra space
+27. Sorted Linked List to Balanced BST
+28. In-place conversion of Sorted DLL to Balanced BST
+44. Count inversions in an array | Set 2 (Using Self-Balancing BST)
+Heap:
+9. Sort a nearly sorted (or K sorted) array
